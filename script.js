@@ -99,6 +99,26 @@ function initPolaroidPhysics() {
       targetZ = baseRotateZ;
       targetScale = 1.0;
     });
+
+    // Touch support for mobile devices
+    card.addEventListener('touchstart', () => {
+      isHovered = true;
+      targetScale = 1.05;
+      targetZ = baseRotateZ + (Math.random() > 0.5 ? 2.5 : -2.5);
+      if (!animFrameId) {
+        animFrameId = requestAnimationFrame(physicsLoop);
+      }
+    }, { passive: true });
+
+    card.addEventListener('touchend', () => {
+      setTimeout(() => {
+        isHovered = false;
+        targetX = 0;
+        targetY = 0;
+        targetZ = baseRotateZ;
+        targetScale = 1.0;
+      }, 350);
+    }, { passive: true });
   });
 }
 
