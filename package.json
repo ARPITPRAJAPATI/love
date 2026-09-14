@@ -1,0 +1,10 @@
+{
+  "name": "birthday-app",
+  "version": "1.0.0",
+  "description": "Handcrafted Birthday Digital Scrapbook Album",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  }
+}

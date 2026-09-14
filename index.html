@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy 18th Birthday, Baby! ❤️</title>
+  <meta name="description" content="A romantic, handcrafted 18th birthday digital scrapbook album celebrating memories, love, and another beautiful year together.">
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400;1,600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+  
+  <!-- Styles -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Dreamy Ambient Fairy Light Glows -->
+  <div class="ambient-glow glow-1" aria-hidden="true"></div>
+  <div class="ambient-glow glow-2" aria-hidden="true"></div>
+  <div class="ambient-glow glow-3" aria-hidden="true"></div>
+  <div class="ambient-glow glow-4" aria-hidden="true"></div>
+
+  <!-- Ambient Audio & Confetti Control Bar -->
+  <nav class="top-nav" id="topNav" aria-label="Quick Navigation & Sound Controls">
+    <div class="nav-brand">
+      <span class="heart-pulse">❤️</span>
+      <span class="nav-title">For My Favorite Person</span>
+    </div>
+    <div class="nav-links">
+      <a href="#hero" class="nav-btn" id="navHeroBtn">Cover</a>
+      <a href="#binder" class="nav-btn" id="navBinderBtn">Album</a>
+      <a href="#memories" class="nav-btn" id="navMemoriesBtn">Memories</a>
+      <a href="#filmstrip-section" class="nav-btn" id="navFilmBtn">Filmstrip</a>
+      <a href="#finale" class="nav-btn" id="navFinaleBtn">Love Letter</a>
+    </div>
+    <div class="nav-actions">
+      <button class="action-pill" id="confettiToggleBtn" title="Shower Rose Petals & Confetti" aria-label="Toggle Confetti">
+        <span class="pill-icon">✨</span>
+        <span class="pill-text">Party Pops</span>
+      </button>
+      <button class="action-pill audio-pill" id="globalAudioBtn" title="Play Romantic Mixtape" aria-label="Toggle Music">
+        <span class="pill-icon music-icon" id="globalMusicIcon">🎵</span>
+        <span class="pill-text" id="globalAudioText">Play Music</span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Confetti Canvas (Gentle & Dreamy) -->
+  <canvas id="confettiCanvas" aria-hidden="true"></canvas>
+
+  <!-- DECORATIVE TOP WATERCOLOR PAPER BORDER -->
+  <div class="deckle-edge top-edge" aria-hidden="true"></div>
+
+  <main class="page-container">
+    
+    <!-- SECTION 1: HERO ENTRANCE -->
+    <section class="section hero-section" id="hero" aria-label="Birthday Greeting Cover">
+      <div class="hero-container">
+        
+        <!-- Centerpiece arrangement with warm spotlight -->
+        <div class="hero-stage">
+          <div class="hero-spotlight" aria-hidden="true"></div>
+          
+          <div class="floating-sparkle sparkle-1">✦</div>
+          <div class="floating-sparkle sparkle-2">★</div>
+          <div class="floating-sparkle sparkle-3">✦</div>
+          <div class="floating-sparkle sparkle-4">✨</div>
+          <div class="floating-sparkle sparkle-5">★</div>
+          
+          <!-- Interactive Envelope & Camera Cluster -->
+          <div class="hero-cluster-card" id="heroClusterCard" role="button" tabindex="0" aria-label="Open Birthday Scrapbook">
+            <div class="hero-imagery-wrap">
+              <img src="assets/hero_centerpiece_trans.png" alt="Happy Birthday Envelope with red roses bouquet and vintage camera" class="hero-img" id="heroCenterImg" />
+            </div>
+            
+            <div class="hero-prompt-wrap">
+              <div class="click-me-arrow" aria-hidden="true">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <path d="M12 4v16M5 13l7 7 7-7"/>
+                </svg>
+              </div>
+              <button class="click-me-btn" id="heroClickMeBtn">
+                <span class="btn-text">click me!</span>
+                <span class="btn-glow-ring"></span>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="scroll-cue">
+          <span>Scroll to explore our scrapbook</span>
+          <div class="cue-line"></div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION 2: THE 18th SCRAPBOOK BINDER -->
+    <section class="section binder-section" id="binder" aria-label="18th Birthday Scrapbook Album">
+      <div class="binder-wrapper">
+        
+        <!-- Realistic Open Spiral / Ring-Binder Book -->
+        <div class="scrapbook-book" id="scrapbookBook">
+          
+          <!-- Silver Ring Binder Spine -->
+          <div class="binder-spine" aria-hidden="true">
+            <div class="binder-ring ring-1">
+              <div class="ring-hole left-hole"></div>
+              <div class="metal-ring"></div>
+              <div class="ring-hole right-hole"></div>
+            </div>
+            <div class="binder-ring ring-2">
+              <div class="ring-hole left-hole"></div>
+              <div class="metal-ring"></div>
+              <div class="ring-hole right-hole"></div>
+            </div>
+            <div class="binder-ring ring-3">
+              <div class="ring-hole left-hole"></div>
+              <div class="metal-ring"></div>
+              <div class="ring-hole right-hole"></div>
+            </div>
+          </div>
+
+          <!-- LEFT PAGE: The 18th Milestone -->
+          <article class="binder-page page-left" id="pageLeft">
+            <div class="page-texture"></div>
+            
+            <div class="page-content">
+              <!-- Big "18" with Baby Photo & Cupcake -->
+              <div class="milestone-visual-wrap">
+                <div class="milestone-halo" aria-hidden="true"></div>
+                <img src="assets/baby_18.png" alt="18 milestone with baby photo in party cone hat and cupcake" class="baby-18-img" />
+                <div class="flicker-candle" title="A warm birthday wish"></div>
+              </div>
+
+              <!-- Romantic Handwritten Note -->
+              <div class="handwritten-block binder-note">
+                <p class="script-para">Happy Birthday baby!</p>
+                <p class="script-para">Another year of being amazing. I can't wait to make even more memories with you. Love you.</p>
+              </div>
+
+              <!-- Decorative Shiny Gold Stars -->
+              <div class="gold-star star-pos-1" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="26" height="26"><polygon points="12,2 15,9 22,9 17,14 19,21 12,17 5,21 7,14 2,9 9,9" fill="url(#goldGrad)"/></svg>
+              </div>
+              <div class="gold-star star-pos-2" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="22" height="22"><polygon points="12,2 15,9 22,9 17,14 19,21 12,17 5,21 7,14 2,9 9,9" fill="url(#goldGrad)"/></svg>
+              </div>
+            </div>
+          </article>
+
+          <!-- RIGHT PAGE: Favorite Person Polaroid -->
+          <article class="binder-page page-right" id="pageRight">
+            <div class="page-texture"></div>
+            
+            <div class="page-content right-content-flow">
+              
+              <!-- Plaid Mat & Polaroid Cluster -->
+              <div class="polaroid-wrapper tilt-right interactive-polaroid" data-tilt-max="10">
+                <!-- Washi Tape -->
+                <div class="washi-tape tape-favorite" aria-hidden="true">
+                  <span>Favorite person</span>
+                  <span class="washi-heart">♡</span>
+                </div>
+                
+                <!-- Gingham Heart Sticker -->
+                <div class="sticker-gingham-heart" aria-hidden="true"></div>
+
+                <!-- Polaroid Card Frame -->
+                <div class="polaroid-frame">
+                  <div class="polaroid-inner-photo">
+                    <img src="assets/polaroid_1.png" alt="Anime couple photo with lipstick kisses on cheek" class="polaroid-core-img" />
+                    <div class="photo-gloss" aria-hidden="true"></div>
+                  </div>
+                  <div class="polaroid-caption">
+                    <span class="caption-text">i love you!</span>
+                    <span class="solid-red-heart">♥</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Subtle Little Gold Stars -->
+              <div class="gold-star star-pos-3" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="24" height="24"><polygon points="12,2 15,9 22,9 17,14 19,21 12,17 5,21 7,14 2,9 9,9" fill="url(#goldGrad)"/></svg>
+              </div>
+            </div>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION 3: FLOATING MEMORIES & LETTERS -->
+    <section class="section memories-section" id="memories" aria-label="Heartfelt Letters and Memories">
+      <div class="memories-container">
+        
+        <!-- Spread Grid -->
+        <div class="memories-grid">
+          
+          <!-- Memory Item 1: Car Selfie & Next Birthday Hope -->
+          <div class="memory-card card-left">
+            <div class="polaroid-wrapper tilt-left interactive-polaroid" data-tilt-max="12">
+              <div class="gold-star card-star-tl" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="28" height="28"><polygon points="12,2 15,9 22,9 17,14 19,21 12,17 5,21 7,14 2,9 9,9" fill="url(#goldGrad)"/></svg>
+              </div>
+              <div class="polaroid-frame">
+                <div class="polaroid-inner-photo">
+                  <img src="assets/polaroid_2_car.png" alt="Cute candid anime couple car selfie" class="polaroid-core-img" />
+                  <div class="photo-gloss" aria-hidden="true"></div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Warm Parchment Note Card -->
+            <div class="scrapbook-note-card note-card-left">
+              <div class="washi-tape tape-note-left" aria-hidden="true">
+                <span>memories ♡</span>
+              </div>
+              <div class="memory-text-wrap">
+                <p class="script-body">
+                  I hope that by the time your next birthday comes around, this little website will only be a tiny reminder of everything we've shared this year. We'll have new photos to look back on, more jokes to laugh about, and countless little moments that made us smile. Until then, let's make every day another memory worth keeping.
+                </p>
+                <div class="cake-sticker-wrap">
+                  <img src="assets/cake_sticker_trans.png" alt="Cute birthday cake with candle sticker" class="cake-sticker-img" />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Memory Item 2: Love Note & Flower Mirror Polaroid -->
+          <div class="memory-card card-right">
+            <!-- Warm Parchment Note Card -->
+            <div class="scrapbook-note-card note-card-right">
+              <div class="washi-tape tape-note-right" aria-hidden="true">
+                <span>always you ✨</span>
+              </div>
+              <div class="memory-text-wrap top-note">
+                <p class="script-body">
+                  I still can't believe it's already your birthday again. Time flies whenever we're together, but every memory we've made has been my favorite. Thank you for making life so much brighter. Let's make this next year full of even more laughs, adventures, and memories before we're celebrating your birthday all over again.
+                </p>
+              </div>
+            </div>
+
+            <div class="polaroid-wrapper tilt-slight-right interactive-polaroid" data-tilt-max="12">
+              <div class="gold-star card-star-tr" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="28" height="28"><polygon points="12,2 15,9 22,9 17,14 19,21 12,17 5,21 7,14 2,9 9,9" fill="url(#goldGrad)"/></svg>
+              </div>
+              <div class="polaroid-frame">
+                <div class="polaroid-inner-photo">
+                  <img src="assets/polaroid_3_flowers.png" alt="Anime couple mirror selfie with vibrant bouquet" class="polaroid-core-img" />
+                  <div class="photo-gloss" aria-hidden="true"></div>
+                </div>
+                <div class="polaroid-caption center-heart">
+                  <span class="solid-red-heart large-heart">♥</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION 4: 35mm VINTAGE PHOTOBOOTH FILMSTRIP -->
+    <section class="section filmstrip-section" id="filmstrip-section" aria-label="Vintage 35mm Photobooth Strip">
+      <div class="filmstrip-container">
+        
+        <div class="filmstrip-header">
+          <span class="film-badge">KODAK SAFETY FILM 400TM</span>
+          <h2 class="film-title">Captured in 35mm</h2>
+          <span class="film-badge">EXPOSURE 01 • 02 • 03</span>
+        </div>
+
+        <!-- Filmstrip Outer with Lightbox Glow -->
+        <div class="vintage-filmstrip-strip" id="filmstripStrip">
+          <div class="film-frames-track">
+            <img src="assets/filmstrip.png" alt="Black and white 35mm anime photobooth filmstrip of intimate couple kisses and hugs" class="filmstrip-image" />
+          </div>
+        </div>
+
+        <div class="filmstrip-caption">
+          <span>Three frames, endless love. Hover to focus.</span>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION 5: FINALE LOVE LETTER & CASSETTE MIXTAPE -->
+    <section class="section finale-section" id="finale" aria-label="Finale Love Letter and Mixtape">
+      <div class="finale-container">
+        
+        <div class="finale-layout">
+          
+          <!-- Scalloped Stamp Love Letter -->
+          <div class="scalloped-letter-card" id="scallopedLetter">
+            <!-- Red Ribbon Bow -->
+            <div class="letter-bow" aria-hidden="true">
+              <svg width="52" height="52" viewBox="0 0 48 48" fill="none">
+                <path d="M24 24C20 18 10 16 12 24C14 30 22 26 24 24ZM24 24C28 18 38 16 36 24C34 30 26 26 24 24Z" fill="#c0263c" />
+                <path d="M24 24L18 38M24 24L30 38" stroke="#9e182c" stroke-width="3.5" stroke-linecap="round"/>
+                <circle cx="24" cy="24" r="4" fill="#750f1f"/>
+              </svg>
+            </div>
+
+            <div class="gold-star star-letter-1" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="26" height="26"><polygon points="12,2 15,9 22,9 17,14 19,21 12,17 5,21 7,14 2,9 9,9" fill="url(#goldGrad)"/></svg>
+            </div>
+            <div class="gold-star star-letter-2" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="24" height="24"><polygon points="12,2 15,9 22,9 17,14 19,21 12,17 5,21 7,14 2,9 9,9" fill="url(#goldGrad)"/></svg>
+            </div>
+            <div class="gold-star star-letter-3" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="20" height="20"><polygon points="12,2 15,9 22,9 17,14 19,21 12,17 5,21 7,14 2,9 9,9" fill="url(#goldGrad)"/></svg>
+            </div>
+
+            <!-- Letter Body -->
+            <div class="letter-content">
+              <p class="script-body letter-para">
+                Happy Birthday baby! Thank you for being you. Thank you for every laugh, every hug, every memory, and every moment we've shared. I hope this birthday is only the beginning of your happiest year yet. I'll be here, making more memories with you until it's time to build your next birthday website.
+              </p>
+            </div>
+          </div>
+
+          <!-- Right Side: Polaroid + Teddy Bears + Interactive Cassette -->
+          <div class="finale-interactive-stack">
+            
+            <!-- Teddy Bears Sticker -->
+            <div class="teddy-bears-wrap">
+              <img src="assets/teddy_bears_trans.png" alt="Two cute plush teddy bears hugging with hearts" class="teddy-img" />
+            </div>
+
+            <!-- Final Couple Polaroid -->
+            <div class="polaroid-wrapper finale-polaroid tilt-slight-left interactive-polaroid" data-tilt-max="10">
+              <div class="sticker-gingham-heart finale-heart" aria-hidden="true"></div>
+              <div class="polaroid-frame">
+                <div class="polaroid-inner-photo">
+                  <img src="assets/polaroid_4.png" alt="Happy anime couple portrait smiling together" class="polaroid-core-img" />
+                  <div class="photo-gloss" aria-hidden="true"></div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Interactive Vintage Cassette Mixtape Player -->
+            <div class="cassette-player-card" id="cassettePlayerCard" role="region" aria-label="Interactive Birthday Cassette Mixtape">
+              
+              <!-- Floating Notes Container -->
+              <div class="floating-notes-box" id="floatingNotesBox" aria-hidden="true"></div>
+
+              <!-- Cassette Body Image & Interactive Overlay -->
+              <div class="cassette-device" id="cassetteDevice" role="button" tabindex="0" aria-label="Play or Pause Birthday Mixtape">
+                <img src="assets/cassette_trans.png" alt="Retro audio cassette tape with 'click me!'" class="cassette-img" id="cassetteImg" />
+                
+                <!-- Animated Mechanical Reels -->
+                <div class="reel-overlay left-reel" id="reelLeft" aria-hidden="true">
+                  <div class="reel-spokes"></div>
+                </div>
+                <div class="reel-overlay right-reel" id="reelRight" aria-hidden="true">
+                  <div class="reel-spokes"></div>
+                </div>
+
+                <!-- Cassette Action Pulse -->
+                <div class="cassette-cta" id="cassetteCta">
+                  <span class="cassette-pulse-dot"></span>
+                  <span class="cassette-cta-text" id="cassetteCtaText">click me!</span>
+                </div>
+              </div>
+
+              <!-- Track Visualizer & Info -->
+              <div class="mixtape-info-bar">
+                <div class="track-details">
+                  <span class="track-title" id="trackTitle">Birthday Melodies • Acoustic Tape 01</span>
+                  <span class="track-status" id="trackStatus">Ready to play</span>
+                </div>
+                
+                <!-- Audio Equalizer Bars -->
+                <div class="equalizer-bars" id="equalizerBars" aria-hidden="true">
+                  <span class="eq-bar bar-1"></span>
+                  <span class="eq-bar bar-2"></span>
+                  <span class="eq-bar bar-3"></span>
+                  <span class="eq-bar bar-4"></span>
+                  <span class="eq-bar bar-5"></span>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- DECORATIVE BOTTOM WATERCOLOR PAPER BORDER -->
+  <div class="deckle-edge bottom-edge" aria-hidden="true"></div>
+
+  <!-- SWEET FOOTER -->
+  <footer class="site-footer">
+    <div class="footer-content">
+      <p class="footer-dedication">
+        Made with all my love for your 18th birthday &bull; Forever &amp; Always
+      </p>
+      <button class="footer-heart-btn" id="footerHeartBtn" aria-label="Send a kiss and love">
+        <span>Send a Kiss</span>
+        <span class="kiss-emoji">💋</span>
+      </button>
+    </div>
+  </footer>
+
+  <!-- SVG Gradient Definitions for Shiny Gold Stars -->
+  <svg width="0" height="0" style="position:absolute">
+    <defs>
+      <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#FFF3B0" />
+        <stop offset="35%" stop-color="#FFD700" />
+        <stop offset="70%" stop-color="#E5A60F" />
+        <stop offset="100%" stop-color="#B87B00" />
+      </linearGradient>
+    </defs>
+  </svg>
+
+  <!-- Scripts -->
+  <script src="script.js"></script>
+</body>
+</html>
