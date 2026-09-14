@@ -1,4 +1,4 @@
-# Happy 18th Birthday, Baby! ❤️ - Digital Scrapbook & Love Album
+# Happy Birthday, Baby! ❤️ - Digital Scrapbook & Love Album
 
 A digital scrapbook celebration website featuring interactive photo binders, polaroid memories, audio player, handwritten notes, and animations.
 
